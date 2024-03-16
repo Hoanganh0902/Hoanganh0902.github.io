@@ -1,0 +1,30 @@
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>ex02</title>
+    <script>
+        function tongab() {
+            var txta = document.getElementById('txta').value;
+            var txtb = document.getElementById('txtb').value;
+            if (txta == null || txta =="" || isNaN(txta)){
+                alert('Vui long nhap so hop le');
+                return;
+            }
+            if (txtb == null || txta =="" || isNaN(txtb)){
+                alert('Vui long nhap so hop le');
+                return;}
+            alert( parseInt(txta) + parseInt(txtb));
+        }
+         
+    </script>
+</head>
+<body>
+    <input type="text" id="txta">
+    <input type="text" id="txtb">
+    <button onclick="tongab();">
+        Tong ab
+    </button>
+    
+</body>
+</html>
