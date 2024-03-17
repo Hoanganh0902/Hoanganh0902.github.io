@@ -2,15 +2,26 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Ex03</title>
-    <script language="javascript">
-        var txta  prompt("Enter any integer");
+    <script>
+        function tongab(){
+            var txta = document.getElementById('txta').value;
+            var txtb = document.getElementById('txtb').value;
+            if(txta == null || txta == "" || isNaN(txta))
+        document.write("<font color='red'>Vui long nhap so hop le</font>");
+            return;
+              if(txtb == null || txtb == "" || isNaN(txtb))
+            document.write("<font color='red'>Vui long nhap so hop le</font>");
+             return;
+            document.write("parseInt(txta)+parseInt(txtb)");  
+        }
         
-        if(txta == null || txta == "" || isNaN(txta))
-        document.write("<font color='red'>You must enter a number</font>");
-        else if(txta )
     </script>
 </head>
 <body>
-    
+    <input type="text" id="txta">
+    <input type="text" id="txtb"
+    <button onclick="tongab">
+        Tong ab
+    </button>
 </body>
 </html>
