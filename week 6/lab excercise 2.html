@@ -2,26 +2,18 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Ex03</title>
-    <script>
-        function tongab(){
-            var txta = document.getElementById('txta').value;
-            var txtb = document.getElementById('txtb').value;
+    <script language="javascript">
+            var txta = prompt("Kiểm tra số");
             if(txta == null || txta == "" || isNaN(txta))
         document.write("<font color='red'>Vui long nhap so hop le</font>");
-            return;
-              if(txtb == null || txtb == "" || isNaN(txtb))
-            document.write("<font color='red'>Vui long nhap so hop le</font>");
-             return;
-            document.write("parseInt(txta)+parseInt(txtb)");  
-        }
+            else if(txta % 2 == 0)
+            document.write("<font color='green'><b>" + txta + "là số chẵn</b></font>");
+             else
+            document.write("<font color='blue'><i>" + txta + "là số lẻ</i></font>");  
         
     </script>
 </head>
 <body>
     <input type="text" id="txta">
-    <input type="text" id="txtb"
-    <button onclick="tongab">
-        Tong ab
-    </button>
 </body>
 </html>
