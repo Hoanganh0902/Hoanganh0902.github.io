@@ -1,17 +1,17 @@
-.Project{
+.project{
     padding-bottom: 10rem;
 }
-.Project h2{
+.project h2{
     margin-bottom: 4rem;
 }
-.Project .Project-container{
+.project .project-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     gap: 2.5rem;
 }
 
-.Project-container .Project-box{
+.project-container .project-box{
     position: relative;
     display: flex;
     border-radius: 2rem;
