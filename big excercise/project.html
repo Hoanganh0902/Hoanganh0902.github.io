@@ -4,6 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .project{
+    padding-bottom: 10rem;
+}
+.project h2{
+    margin-bottom: 4rem;
+}
+.project .project-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.project-container .project-box{
+    position: relative;
+    display: flex;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+    overflow: hidden;
+}
+.project-box img {
+    width: 100%;
+    transition: .5s ease;
+}
+.project-box:hover img {
+    transform: scale(1.1);
+}
+.project-box .project-layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( rgba(0, 0, 0, .1), var(--main-color));
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    opacity: 0;
+    transition: .5s ease;
+}
+.project-box:hover .project-layer {
+    opacity: 1;
+}
+.project-layer h4 {
+    font-size: 3rem;
+}
+.project-layer p {
+     font-size:  1.6rem;
+     margin: .3rem 0 1rem;
+}
+
+    </style>
 </head>
 <body>
 <!-- project section design-->
@@ -24,14 +81,14 @@
             <div class="project-layer">
                 <h4>Web Design</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
-                
+            
             </div>
         </div>
         <div class="project-box">
             <img src="images/img3.jpg" alt="">
             <div class="project-layer">
                 <h4>Web Design</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
+                <p>Đây là một dự án nhỏ tìm hiểu về thiết kế ứng dụng và tạo nên một ứng dụng cho riêng mình.</p>
                 
             </div>
         </div>
@@ -51,6 +108,11 @@
                 
             </div>
         </div>
+        <div class="project-box">
+            <img src="images/img6.jpg" alt="">
+            <div class="project-layer">
+                <h4>Web Design</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
     </div>
 </selection>
 </body>
